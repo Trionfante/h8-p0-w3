@@ -2,7 +2,7 @@
 
     function angkaPalindrome(num){
         if (isNaN(num)) {
-            return 'please input number.'
+            return 'please input number.';
         } else {
             var input = num.toString();
 
@@ -20,19 +20,19 @@
 
             result = reverse(input);
 
-            if (result == false){
+            if (result === false){
                 // console.log(num + ' is not palindrome, looking for the next palindrome...');
-                while (result == false){
-                    num++
+                while (result === false){
+                    num++;
                     input = num.toString();
                     result=reverse(input);
                 }
                 // return num+' is palindrome';
                 return num;
-            } else if (result == true){
+            } else if (result === true){
                 // console.log(num + ' is palindrome, yet looking for the next palindrome...')
                 result = false;
-                while (result == false){
+                while (result === false){
                     num++;
                     input = num.toString();
                     result=reverse(input);
