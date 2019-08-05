@@ -1,8 +1,8 @@
 // Check Palindrome
 
     function palindrome(kata){
-        var reverse = kata.split("").reverse().join("");
-        if (reverse == kata){
+        // var reverse = kata.split("").reverse().join("");
+        if (kata == kata.split("").reverse().join("")){
             return true;
         } else {
             return false;
