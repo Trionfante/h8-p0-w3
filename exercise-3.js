@@ -5,14 +5,14 @@ var input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-// function dataHandling(input){
-//     for (var i = 0; i < input.length; i++){
-//         console.log('Nomor ID: '+ input[i][0] +
-//                     '\nNama Lengkap: ' + input[i][1] +
-//                     '\nTTL: ' + input[i][2] + ' ' + input[i][3] +
-//                     '\nHoby: ' + input[i][4] + '\n');
-//         }
-// }
+function dataHandling(input){
+    for (var i = 0; i < input.length; i++){
+        console.log('Nomor ID: '+ input[i][0] +
+                    '\nNama Lengkap: ' + input[i][1] +
+                    '\nTTL: ' + input[i][2] + ' ' + input[i][3] +
+                    '\nHoby: ' + input[i][4] + '\n');
+    }
+}
 
 function dataHandling(input){
     for (var i = 0; i < input.length; i++){
