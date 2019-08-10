@@ -1,9 +1,9 @@
 function tentukanDeretAritmatika(arr) {
     debugger
     for (var i = 0; i < arr.length-1; i++) {
-        var gapInit = arr[1] - arr[0];
-        var gapNext = arr[i+1] - arr[i];
-        if (gapInit != gapNext) {
+        // var gapInit = arr[1] - arr[0];
+        // var gapNext = arr[i+1] - arr[i];
+        if ((arr[1] - arr[0]) != (arr[i+1] - arr[i])) {
             return false;
         }
     } return true;
