@@ -3,7 +3,7 @@ function tentukanDeretGeometri(arr) {
     var j = 1;
     for (var i = 0; i < arr.length-1; i++) {
         var gap = arr[1] / arr[0];
-        if (arr[j] != arr[i] * gap) {
+        if (arr[j] != (arr[i] * gap)) {
             return false;
         }
         j++;
