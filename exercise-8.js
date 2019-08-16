@@ -1,5 +1,5 @@
     /*
-    Attempt 1
+    // Attempt 1
         function pasanganTerbesar(input) {
             var i = 0;
             var j = 2;
@@ -27,10 +27,11 @@
             }
             return bigger;
         }
-    End of Attempt 1
+    // End of Attempt 1
     */
 
-    // Attempt 2
+    /*
+    // Attempt 2 make it more efficient with var usage
     function pasanganTerbesar(input) {
         debugger
         var output = 0;
@@ -49,6 +50,29 @@
         return output;
     }
     // End of Attempt 2
+    */
+
+    // Attempt 3 PAKE INDEX TERUS DITAMBAHHHHHHHH
+    function pasanganTerbesar(input) {
+        debugger
+        var output = 0;
+        var length = input.toString().length;
+        var array = input.toString().split('');
+        
+        for (var i = 0; i < length; i++) {
+            for (var j = 2; j < length; j++) {
+                var temp1 = array[i] + array[i+1];
+                var temp2 = array[j] + array[j+1];
+                if (temp1 > temp2 && temp1 > output) {
+                    output = temp1;
+                } else if (temp1 < temp2 && temp2 > output) {
+                    output = temp2;
+                }
+            }
+        }
+        return output;
+    }
+    // End of Attempt 3
 
 // TEST CASES
 console.log(pasanganTerbesar(641573)); // 73
