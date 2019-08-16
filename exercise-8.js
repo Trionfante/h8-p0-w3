@@ -57,7 +57,7 @@
         debugger
         var output = 0;
         var length = input.toString().length;
-        var array = input.toString().split('');
+        var array = input.toString();
         
         for (var i = 0; i < length; i++) {
             for (var j = 2; j < length; j++) {
