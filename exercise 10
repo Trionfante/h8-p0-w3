@@ -1,0 +1,34 @@
+
+
+	the function needs to create a new array,
+
+	which contain the same length of data as input,
+
+	with each position as a result of multiplication
+		of every data from the input "EXCEPT" the data in that position itself.
+
+
+	> PROCESS is multiplicating every data in the array, except one which have the same index value as the index where the data is being inputted after.
+	PROCESS EQUALS:
+		DEFINING input.length
+		initiate loop1 that count for each data index in the inputted array, starts from index 0, this step is to be repeated for as long as input.length
+		initiate loop2 that count for each data index in the inputted array that is to be multiplied with, starts from index 0
+		initiate conditional where
+			IF index loop1 DOES-NOT-EQUAL index loop2 THEN
+			the first value from index of loop2 is stored to be multiplied later
+			index loop2 moves forward
+			back to IF
+			END-IF
+			Outside of the specified condition, index loop2 to be moved forward until condition specified is met
+			
+			
+		
+
+	therefore..
+	> function should only do PROCESS, if INITIAL INDEX != TARGET INDEX
+	
+
+
+
+	1	2	3	4	5
+	x	v	v	v	v

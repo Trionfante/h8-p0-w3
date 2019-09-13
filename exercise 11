@@ -1,0 +1,9 @@
+
+	
+	Initiate array.length
+	define gap = array[1] - array[0]
+	loop as far as array.length
+		IF gap != array[i+1]-array[i] THEN
+			RETURN false
+		END IF
+			RETURN true
